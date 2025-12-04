@@ -11,4 +11,4 @@ if __name__ == '__main__':
     create_month(df)
     create_order_value_high(df)
 
-print(df.info())
+    print(df.info())
