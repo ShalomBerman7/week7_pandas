@@ -40,12 +40,17 @@ def create_month(df):
                   )
     return df
 
+
 #5
 def create_order_value_high(df):
     df['high_value_order'] = np.where(df['total_amount'] > df['total_amount'].mean(), True, False)
-    
+    return df
+
+
+def short(df):
+    pass
 
 #9
-def to_csv(data):
-    data.to_csv('clean_orders_[ID_NUMBER].csv')
+def to_csv(df):
+    df.to_csv('clean_orders_[ID_NUMBER].csv')
     
