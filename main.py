@@ -7,8 +7,8 @@ if __name__ == '__main__':
     to_datetime(df)
     to_float(df)
     del_markings(df)
-    to_csv(df)
     create_month(df)
     create_order_value_high(df)
+    to_csv(df)
 
     print(df.info())
